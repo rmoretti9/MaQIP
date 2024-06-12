@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/maqip.egg-info/PKG-INFO
+src/maqip.egg-info/SOURCES.txt
+src/maqip.egg-info/dependency_links.txt
+src/maqip.egg-info/entry_points.txt
+src/maqip.egg-info/not-zip-safe
+src/maqip.egg-info/requires.txt
+src/maqip.egg-info/top_level.txt

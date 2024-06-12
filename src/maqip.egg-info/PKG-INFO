@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: maqip
+Version: 1.0.0
+Summary: Quantum kernel classifier for neutrino physics applications
+Home-page: https://github.com/rmoretti9/MaQIP
+Author: A. Giachero, M. Grossi, R. Moretti, M. Rossi
+Author-email: andrea.giachero@mib.infn.it, michele.grossi@cern.ch, r.moretti9@campus.unimib.it, marco.rossi@cern.ch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: awkward
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: networkx>=2.8.8
+Requires-Dist: pygad>=3.2.0
+Requires-Dist: qiskit
+Requires-Dist: qiskit_machine_learning
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pydot
+Requires-Dist: pyyaml
+Requires-Dist: qutip
+Requires-Dist: uproot
+Requires-Dist: qiskit-aer
+Requires-Dist: qiskit-ibm-runtime
+Requires-Dist: qiskit-ibm-provider
+Requires-Dist: pandas
+
+# MaQIP
+Many Qsvms In Parallel
+
+## Run Parallel QSVM on QPU example
+Prepare a Python environment and activate it. (It should work with any Python version > 3.8)
+
+### Clone the Repository
+
+Clone the MaQIP repository and install the maqip package:
+
+    git clone https://github.com/rmoretti9/MaQIP.git
+
+    cd MaQIP
+    pip install -e .
+
+### Configure IBM Account
+
+Inside `MaQIP/examples/torino_run.py` (right after the imports), fill the IBM account/provider fields with your token/instance as required.
+
+### Run the Example Script
+
+<b> Move inside the examples folder </b> (this is important for the correct execution) and run the script. This will prepare the Quantum Circuits and send batch jobs to IBM Torino:
+
+    cd examples
+    python torino_run.py
+
+This script will generate a folder called `Output_genetic` that will progressively save data as they are generated. Do not rename the `Output_genetic` folder and its content.
