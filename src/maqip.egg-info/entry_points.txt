@@ -1,2 +1,0 @@
-[console_scripts]
-maqip = maqip.scripts.maqip:main
