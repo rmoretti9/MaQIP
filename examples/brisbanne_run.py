@@ -15,11 +15,11 @@ import csv
 from qiskit_ibm_provider import IBMProvider
 
 ###################################################################
-############ LOAD AN ACCOUNT THAT CAN RUN ON BRISBANNE ############
+############ LOAD AN ACCOUNT THAT CAN RUN ON BRISBANE #############
 ###################################################################
 
-IBMProvider.save_account(token='c4a395d1b2b4444874ac10858f3e0d430b570d4295a4a3af4157331ae9c79062afd574992a3d0b9fd066b99f9897b4d585ad9b56baf2b3d94ad6d7ade261638a', overwrite=True)
-provider = IBMProvider(instance='ibm-q/open/main')
+IBMProvider.save_account(token='', overwrite=True)
+provider = IBMProvider(instance='')
 backend = provider.get_backend('ibm_brisbane')
 ###################################################################
 ###################################################################
