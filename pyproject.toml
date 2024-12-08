@@ -1,6 +1,15 @@
 [build-system]
 requires = [
     "setuptools>=42",
-    "wheel"
+    "wheel",
+    "numpy==2.2.0",
+    "pandas==2.2.3",
+    "pygad==3.3.1",
+    "qiskit==1.1.0",
+    "qiskit_aer==0.14.2",
+    "qiskit_ibm_provider==0.11.0",
+    "qiskit_ibm_runtime==0.24.0",
+    "qiskit_machine_learning==0.7.2",
+    "scikit_learn==1.5.2",
 ]
 build-backend = "setuptools.build_meta"
