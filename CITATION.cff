@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Moretti"
+  given-names: "Roberto"
+  orcid: "https://orcid.org/0000-0002-5201-5920"
+
+title: "MaQIP"
+version: 0.1
+doi: 10.5281/zenodo.14917911
+date-released: 2025-02-24
+url: "https://github.com/rmoretti9/MaQIP"
